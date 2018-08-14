@@ -12,13 +12,16 @@ body {
 
 .container {
   max-width: 960px;
-  margin: auto;
+  height: auto;
+  margin: 0 auto;
 }
+
 h1 {
   font-weight: 900;
   font-size: 1.5rem;
-  color: #3D3D3D;
+  color: #094183;
 }
+
 header {
   height: 4rem;
 }
@@ -57,7 +60,7 @@ nav a {
 
 span.logo {
   color: #094183;
-  font-weight: 100;
+  font-weight: 700;
 }
 .icon-menu {
   display: none;
@@ -92,44 +95,42 @@ header .flex {
 }
 
 .main-banner h2 {
-  font-weight: 700;
+  font-weight: 500;
   padding-bottom: 1rem;
 }
 
 .main-banner .button {
   background-color: #094183;
   color: white;
-  font-weight: 500;
+  font-weight: bold;
   padding: 0.5rem;
   width: 100%;
   justify-content: center;
   margin-top: 1rem;
-}
-
-.supporting {
-  display: flex;
+  border-radius: 5px;
 }
 
 .supporting.container {
+  display: flex;
   margin: 0 auto;
-  padding: 0 0 2rem 0;
-  justify-content: center;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .promo {
-  overflow: hidden;
-  width: 60%;
-  height: auto;
-  padding: 2rem;
+  margin: 2rem 1.5rem;
+  display: inline-block;
+  min-width: 60%;
 }
 
-.promo img {
-  height: auto;
+.promo .image {
   width: 100%;
+  margin: 0;
 }
 
 .promo h1 {
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
   line-height: 1.8;
   color: #094183;
 }
@@ -140,37 +141,83 @@ header .flex {
 }
 
 .promo p.quote {
-  font-weight: 700;
-  padding-below: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 2rem;
 }
 
 .key-info {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  justify-content: flex-start;
+  max-width: 40%;
   height: auto;
-  align-items: center;
-  padding-top: 2rem;
+  padding: 2rem 0 1.5rem 0;
+  margin-top: -0.5rem;
 }
 
 .key-info img {
   width: 35%;
-}
-.orientation, .campus, .lecture {
-  display: inline-flex;
-  padding: 1rem;
+  height: auto;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
-.orientation, .campus, .lecture h2 {
-  display: inline-flex;
-  padding: 0.5rem;
+.info1, .info2, .info3 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.info3 {
+  background-color: #EFEFEC;
+}
+
+.key-info h2 {
+  font-weight: bold;
+  color: #094183;
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
+}
+
+.key-info p {
+  font-weight: 300;
+  color: #094183;
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.key-info a {
+  text-decoration: none;
+  font-weight: bold;
   color: #094183;
 }
-
-.orientation {
-  padding-top: 0;
+.key-info a:hover {
+  color: lightblue;
 }
-.lecture {
+
+.learning.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #EFEFEC;
-  width: 100%;
+}
+
+.learning.container h1 {
+  line-height: 1.8;
+  padding: 2rem 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  grid-gap: 1rem;
+}
+.grid-item {
+  max-width: 30%;
+}
+
+.grid-item img {
 }
